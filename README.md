@@ -70,11 +70,17 @@ outputs
   {% include "x.twig" with({(i): i}) %}
 {% endfor %}
 ```
+```twig
+{{-- x.twig content --}}
+<!-- {{ i }} -->
+{% once %}
+    <!-- [{{ i }}] Hello world! -->
+{% endonce %}
+```
 
 outputs
 
 ```html
-{{-- x.twig content --}}
 <!-- 0 -->
 <!-- [0] Hello world! -->
 <!-- 1 -->
