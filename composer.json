@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Twig template tag {% once [name] %}{% endonce %}",
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Serhii Shubin",

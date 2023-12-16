@@ -7,25 +7,27 @@ Can be used when need restrict once some part of code.
 
 ## How to use.
 
-1. Require this extension with your composer
+1.Require this extension with your composer
 
 ```shell
 composer require cf-git/twig-once
 ```
 
-2. nclude autoload file in your php project (if it not included);
+2.include autoload file in your php project (if it not included);
 
 ```php
 include_once('vendor/autoload.php');
 ```
 
-3. add token parser to Twig\Environment
+3.add token parser to Twig\Environment
 
 ```php
 $twig = new Environment($loader, $config);
 $twig->addTokenParser(new OnceTokenParser());
 
 ```
+
+4.Then use twig documentation! 
 
 And use it.
 
