@@ -1,10 +1,10 @@
 <?php
 
-namespace CFGit\TwigEngine\Extensions;
+namespace CFGit\TwigEngine\Extensions\Once;
 
-use \Twig\Error\SyntaxError;
-use \Twig\Token;
-use \Twig\TokenParser\AbstractTokenParser;
+use Twig\Error\SyntaxError;
+use Twig\Token;
+use Twig\TokenParser\AbstractTokenParser;
 
 class OnceTokenParser extends AbstractTokenParser
 {

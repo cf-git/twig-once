@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CFGit\\TwigEngine\\Extensions\\": "src/TwigEngine/Extensions/"
+            "CFGit\\TwigEngine\\Extensions\\Once\\": "src/TwigEngine/Extensions/Once/"
         }
     }
 }

@@ -20,10 +20,15 @@ include_once('vendor/autoload.php');
 ```
 
 3.add token parser to Twig\Environment
-
 ```php
-$twig = new Environment($loader, $config);
-$twig->addTokenParser(new OnceTokenParser());
+$twig = new \Twig\Environment($loader, $config);
+$twig->addExtension(new \CFGit\TwigEngine\Extensions\Once\OnceExtension())
+
+```
+or like this
+```php
+$twig = new \Twig\Environment($loader, $config);
+$twig->addTokenParser(new \CFGit\TwigEngine\Extensions\Once\OnceTokenParser());
 
 ```
 

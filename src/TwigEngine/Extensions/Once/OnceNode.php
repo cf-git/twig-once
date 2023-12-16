@@ -1,9 +1,9 @@
 <?php
 
-namespace CFGit\TwigEngine\Extensions;
+namespace CFGit\TwigEngine\Extensions\Once;
 
-use \Twig\Compiler;
-use \Twig\Node\Node;
+use Twig\Compiler;
+use Twig\Node\Node;
 
 class OnceNode extends Node
 {
