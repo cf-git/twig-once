@@ -52,7 +52,6 @@ And use it.
 outputs
 
 ```html
-
 <div>0</div>
 <script>console.log("[0] Hello world!")</script>
 <div>1</div>
@@ -60,5 +59,27 @@ outputs
 <div>3</div>
 <div>4</div>
 <div>5</div>
+```
 
+### Same with included files
+
+```twig
+{{-- Main content --}}
+
+{% for i in range(0,5) %}
+  {% include "x.twig" with({(i): i}) %}
+{% endfor %}
+```
+
+outputs
+
+```html
+{{-- x.twig content --}}
+<!-- 0 -->
+<!-- [0] Hello world! -->
+<!-- 1 -->
+<!-- 2 -->
+<!-- 3 -->
+<!-- 4 -->
+<!-- 5 -->
 ```
