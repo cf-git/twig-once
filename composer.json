@@ -1,0 +1,22 @@
+{
+    "name": "cf-git/twig-once",
+    "type": "library",
+    "description": "Twig template tag {% once [name] %}{% endonce %}",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Serhii Shubin",
+            "email": "is.captain.fail@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">7.2",
+        "twig/twig": "> 3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CFGit\\TwigEngine\\Extensions\\": "src/TwigEngine/Extensions/"
+        }
+    }
+}
